@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Disapearing Pictures</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("img").click(function () {
+                    $(this).hide();
+                });
+                $("button").click(function() {
+                    $('img').show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>jQuery - assignment 1</h1>
+            <div class="img-container">
+                <img src="ninja-img.png" alt="ninja image">
+                <img src="ninja-img.png" alt="ninja image">
+                <img src="ninja-img.png" alt="ninja image">
+                <img src="ninja-img.png" alt="ninja image">
+            </div>
+            <div class="img-container">
+                <img src="ninja-img.png" alt="ninja image">
+                <img src="ninja-img.png" alt="ninja image">
+                <img src="ninja-img.png" alt="ninja image">
+                <img src="ninja-img.png" alt="ninja image">
+            </div>
+            <button>Restore</button>
+        </div>
+    
+    </body>
+</html>
